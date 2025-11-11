@@ -30,6 +30,48 @@
 		<java.version>21</java.version>
 	</properties>
 	<dependencies>
+	<!-- https://mvnrepository.com/artifact/dev.langchain4j/langchain4j-core -->
+		<dependency>
+		    <groupId>dev.langchain4j</groupId>
+		    <artifactId>langchain4j-core</artifactId>
+		    <version>1.8.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/dev.langchain4j/langchain4j-azure-open-ai -->
+		<dependency>
+		    <groupId>dev.langchain4j</groupId>
+		    <artifactId>langchain4j-azure-open-ai</artifactId>
+		    <version>1.8.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/dev.langchain4j/langchain4j -->
+		<dependency>
+		    <groupId>dev.langchain4j</groupId>
+		    <artifactId>langchain4j</artifactId>
+		    <version>0.33.0</version>
+		</dependency>
+
+        <!-- https://mvnrepository.com/artifact/dev.langchain4j/langchain4j-open-ai -->
+		<dependency>
+		    <groupId>dev.langchain4j</groupId>
+		    <artifactId>langchain4j-open-ai</artifactId>
+		    <version>1.8.0</version>
+		</dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <!-- needed to generate automatic metadata about available config properties -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -37,18 +79,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/io.modelcontextprotocol.sdk/mcp -->
-		<dependency>
-		    <groupId>io.modelcontextprotocol.sdk</groupId>
-		    <artifactId>mcp</artifactId>
-		    <version>0.14.1</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.springframework.ai/spring-ai-mcp -->
-		<dependency>
-		    <groupId>org.springframework.ai</groupId>
-		    <artifactId>spring-ai-mcp</artifactId>
-		    <version>1.0.3</version>
 		</dependency>
 		<dependency>
 			<groupId>com.mysql</groupId>
